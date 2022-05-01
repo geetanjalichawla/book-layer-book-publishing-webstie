@@ -165,7 +165,7 @@ body {
   display: flex;
   padding: 25px;
   width: 40%;
-  height: 250px;
+  height: 350px;
   margin-right: 1px;
 }
 .book-cell:nth-child(1) {
@@ -197,6 +197,7 @@ body {
   top: 25%;
   width: 50%;
   height: 50%;
+  bottom: 10%;
 }
 
 .profile .previous {
@@ -421,7 +422,7 @@ h1 {
   font-weight: 600;
   margin-top: 40px;
   padding: 5px 30px;
-  border: 1px solid #e0e0e0;
+  border: 1px solid #ffffff;
 }
 .books-list-heading{
   display: flex;
@@ -435,7 +436,7 @@ h1 {
   font-weight: 500;
 }
 .books-list-heading p{
-  color: #808080;
+  color: #ffffff;
   margin: 10px;
   font-size: 0.9rem;
 }
@@ -446,6 +447,7 @@ h1 {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 20px;
+  background: #458997;
 }
 .books-box{
   display: flex;
@@ -454,7 +456,12 @@ h1 {
   align-items: center;
   border: 1px solid #f7f7f7;
   border-radius: 10px;
+  background: white;
   margin: 20px;
+
+}
+.books{
+  background: #458997;
 }
 .books-img{
   width:200px;
@@ -505,10 +512,7 @@ h1 {
   animation: fade 0.3s;
 
 }
-.add-cart:hover{
-  background-color: #f76b6a;
-  transition: all ease 0.2s;
-}
+
 .books-box:hover .add-cart{
   display: flex;
 }
@@ -518,3 +522,58 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+
+/* registraiton  */
+.registraition{  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+.container {  
+    padding: 50px;  
+  background-color: lightblue;  
+}  
+  
+input[type=text], input[type=password], input[type = tel] textarea {  
+  width: 100%;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: inline-block;  
+  border: none;  
+  background: #f1f1f1;  
+}  
+input[type=text]:focus, input[type=password]:focus,   input[type=tel]:focus{  
+  background-color: orange;  
+  outline: none;  
+}
+
+ div {  
+            padding: 10px 0;  
+         }  
+hr {  
+  border: 1px solid #f1f1f1;  
+  margin-bottom: 25px;  
+}  
+.registerbtn {  
+  background-color: #4CAF50;  
+  color: white;  
+  padding: 16px 20px;  
+  margin: 8px 0;  
+  border: none;  
+  cursor: pointer;  
+  width: 100%;  
+  opacity: 0.9;  
+}  
+.registerbtn:hover {  
+  opacity: 1; }
+
+  .feedback{
+    
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 30px;
+    text-align: center;
+    
+  }
+  .form{
+    background: rgb(248, 248, 248);
+  }
