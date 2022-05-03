@@ -524,16 +524,13 @@ h1 {
 }
 
 /* registraiton  */
-.registraition{  
-  font-family: Calibri, Helvetica, sans-serif;  
-  background-color: pink;  
-}  
+
 .container {  
     padding: 50px;  
   background-color: lightblue;  
 }  
   
-input[type=text], input[type=password], input[type = tel] textarea {  
+input[type=text], input[type=password], input[type = tel] textarea ,#country, #date {  
   width: 100%;  
   padding: 15px;  
   margin: 5px 0 22px 0;  
@@ -576,4 +573,18 @@ hr {
   }
   .form{
     background: rgb(248, 248, 248);
+  }
+
+  #subject {
+    width: 100%;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: inline-block;  
+    border: none;  
+    background: #f1f1f1;
+  } 
+
+  /* small tag allert */
+  small{
+    color: rgb(255, 7, 7);
   }

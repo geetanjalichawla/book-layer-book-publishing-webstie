@@ -38,12 +38,29 @@ function validateEmail(input, requiredMsg, invalidMsg) {
 	}
 	return true;
 }
+function validatphone(input, requiredMsg, invalidMsg) {
+	// check if the value is not empty
+	if (!hasValue(input, requiredMsg)) {
+		return false;
+	}
+	// validate email format
+
+	if (isNaN(tel)) {
+		return showError(input, invalidMsg);
+	}
+	if(length(tel) > 10)
+	return showError(input, invalidMsg);
+	return true;
+}
 
 const form = document.querySelector("#signup");
 
 const NAME_REQUIRED = "Please enter your name";
+const TITLE_REQUIRED = "Please enter your book title";
 const EMAIL_REQUIRED = "Please enter your email";
+const PHONE_REQUIRED = "Please enter your phone number";
 const EMAIL_INVALID = "Please enter a correct email address format";
+const PHONE_INVALID = "Please enter a correct phone number"
 
 form.addEventListener("submit", function (event) {
 	// stop form submission
@@ -51,9 +68,12 @@ form.addEventListener("submit", function (event) {
 
 	// validate the form
 	let nameValid = hasValue(form.elements["name"], NAME_REQUIRED);
+	let titleValid = hasValue(form.elements["title"],TITLE_REQUIRED );
+	let dateValid = hasValue(form.elements["date"],TITLE_REQUIRED );
 	let emailValid = validateEmail(form.elements["email"], EMAIL_REQUIRED, EMAIL_INVALID);
+	let phonevalid = validatphone(form.elements["tel"],PHONE_REQUIRED,PHONE_INVALID);
 	// if valid, submit the form.
-	if (nameValid && emailValid) {
+	if (nameValid && emailValid && phonevalid) {
 		alert("Demo only. No form was posted.");
 	}
 });
