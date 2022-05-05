@@ -525,10 +525,17 @@ h1 {
 
 /* registraiton  */
 
-.container {  
+.row .container  {  
     padding: 50px;  
   background-color: lightblue;  
 }  
+.container
+{
+  padding: 50px;  
+  background-color: rgb(247, 214, 240); 
+}
+
+
   
 input[type=text], input[type=password], input[type = tel] textarea ,#country, #date {  
   width: 100%;  

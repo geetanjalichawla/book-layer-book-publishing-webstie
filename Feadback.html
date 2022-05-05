@@ -8,74 +8,93 @@
   <title>Book lists</title>
   <link rel="stylesheet" href="style.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css'>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<!-- CSS -->
-<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-<!-- JavaScript -->
-<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- JavaScript -->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 </head>
 
-<body  >
-  <div class="topnav">
-    <a  href="index.html">Home</a>
-    <a href="book.html">Books</a>
-    <a href="author_registration.html">Registration</a>
-    <a class="active"href="Feadback.html">Feedback</a>
+<body>
+  <!-- header  -->
+  <header>
+    <!-- navigation -->
+    <nav>
+      <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="book.html">Books</a>
+        <a href="author_registration.html">Registration</a>
+        <a class="active" href="Feadback.html">Feedback</a>
+      </div>
+    </nav>
+  </header>
+  <h2 class="feedback">FEEDBACK FORM</h2>
+  <div class="container">
+    <form>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">First Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="lname">Last Name</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+      </div>
+      <div class="field">
+        <label for="email">Email:</label>
+        <br> <input type="text" id="email" name="email" placeholder="Enter your email address" />
+        <small></small>
+      </div>
+      <div class="field">
+        <div class="col-25">
+          <label for="country">Country</label>
+        </div>
+        <div class="col-75">
+          <select id="country" name="country">
+            <option value="none">Select Country</option>
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="russia">Russia</option>
+            <option value="japan">Japan</option>
+            <option value="india">India</option>
+            <option value="china">China</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="feed_back">Feed Back</label>
+        </div>
+        <div class="col-75">
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
   </div>
-  <h2 class="feedback">FEEDBACK FORM</h2>    
-<div class="container">    
-  <form>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="fname">First Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="lname">Last Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
-      </div>    
-    </div>    
-    <div class="field">
-      <label for="email">Email:</label>
-     <br> <input type="text" id="email" name="email" placeholder="Enter your email address" />
-      <small></small>     
-      </div>    
-    <div class="field">    
-      <div class="col-25">    
-        <label for="country">Country</label>    
-      </div>    
-      <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
-          <option value="australia">Australia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
-        </select>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
-      </div>    
-      <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <input type="submit" value="Submit">    
-    </div>    
-  </form>    
-</div>    
-    
-</body></html>
+  <br>
+  <br>
+  <br>
+  </div>
+  <br>
+  <br>
+  <br>
+  </div>
+  <br>
+  <br>
+  <br>
+</body>
+
+</html>
